@@ -1,0 +1,7 @@
+UPDATE  repositories
+SET address = '!'
+WHERE id!=0;
+
+/*ALTER TABLE repositories DROP COLUMN id;*/
+
+select project,commits,contributors,address from repositories;
