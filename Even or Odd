@@ -1,0 +1,18 @@
+ALTER TABLE numbers
+ADD is_even varchar(20);
+
+
+UPDATE  numbers
+SET is_even = 'Even'
+WHERE number>0;
+
+UPDATE  numbers
+SET is_even = 'Odd'
+WHERE number=0;
+
+UPDATE numbers
+SET is_even= 'Odd'
+WHERE number<0;
+
+
+SELECT is_Even FROM numbers;
